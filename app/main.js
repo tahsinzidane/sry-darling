@@ -1,8 +1,22 @@
-  document.getElementById("myForm").addEventListener("submit", function(event) {
-            event.preventDefault(); // Prevent default form submission
-            
-            let fname = document.getElementById("fname").value;
-            for (let x = 0; x <= 100; x++) {
-                document.body.insertAdjacentHTML("beforeend", fname + ", " + x + "<br>");
-            }
-        });
+document.getElementById("myForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    let fname = document.getElementById("fnameInput").value;
+    let num = parseInt(document.getElementById("numInput").value);
+    let outputDiv = document.getElementById("output");
+    outputDiv.innerHTML = "";
+    for (let x = 1; x <= num; x++) {
+        outputDiv.innerHTML += x + "- " + fname + "<br>";
+    }
+    // Show copy button if texts are generated
+    if (num > 0) {
+        document.getElementById("copyButton").style.display = "inline-block";
+    } else {
+        document.getElementById("copyButton").style.display = "none";
+    }
+});
+
+document.getElementById("copyButton").addEventListener("click", function() {
+    let outputText = document.getElementById("output").innerText;
+    navigator.clipboard.writeText(outputText);
+    alert("Text copied to clipboard!");
+});
