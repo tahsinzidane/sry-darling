@@ -1,0 +1,51 @@
+  @import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.hero{
+    height: 860px;
+    width: 100%;
+    background-color: whitesmoke;   
+    /* overflow: hidden; */
+}
+h3{
+    font-family: 'Protest Strike', sans-serif;
+}
+.cpl{
+    height: 700px;
+    width: 740px;
+    position: fixed;
+    left: 650px;
+    top: -10px;
+}
+input[type=text]{
+    height: 40px;
+    width: 450px;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 20px;;
+}
+input[type=number]{
+    height: 40px;
+    width: 450px;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 20px;;
+}
+input[type=submit]{
+    height: 80px;
+    width: 100px;
+    border-radius: 15px;
+    font-size: 20px;;
+}
+.container{
+    position: relative;
+    margin-left: 250px;
+    margin-top: 100px;
+}
+.txt-aria{
+    height: auto;
+    width: 200px;
+    background-color: transparent;
+}
