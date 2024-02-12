@@ -3,15 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>sry 100x</title>
+    
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    
+    <!-- emojiRain cdn -->
+    <link href="https://iamovi.github.io/emojiRain/dist/emojirain.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+  
 </head>
 <body>
+  <!-- emojiRain -->
+<div class="love-emojis"></div>
+  
+  
     <h3>say sorry to your jan 100x time</h3>
     <form id="myForm">
-        <input type="text" id="fname"> <br><br>
-        <input type="submit" value="go"> 
-    </form>
-<script src="./main.js"></script>
+        <input type="text" name="fname" id="fnameInput"> <br>
+        <h4>Select sorry value!</h4>
+        <input type="number" name="num" id="numInput"> <br>
+       <input type="submit" value="go" id="submitButton"> 
+<button id="copyButton" style="display:none;">Copy</button>
 
+    </form>
+    <div id="output"></div>
+
+ <!-- emojiRain CDN -->
+ <script src="https://iamovi.github.io/emojiRain/dist/emojirain.js"></script>
+    <script src="./main.js"></script>
 </body>
 </html>
