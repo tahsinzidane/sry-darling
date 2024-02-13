@@ -68,3 +68,9 @@ input[type="submit"]:hover {
 .love-emojis {
   pointer-events: none;
 }
+.footer{
+    float: right;
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+ }
