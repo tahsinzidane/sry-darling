@@ -30,8 +30,6 @@ input[type="submit"] {
     border: 3px solid #ccc;
     border-radius: 3px;
     background-color: transparent; /* Background set to transparent */
-    width: 2git50px;
-    height: 40px;
 }
 
 input[type="submit"] {
@@ -50,7 +48,7 @@ input[type="submit"]:hover {
 /* Style the form container */
 #myForm {
     margin-bottom: 20px;
-    
+
 }
 #output {
   color: white;
@@ -60,7 +58,7 @@ input[type="submit"]:hover {
     border: none;
     border-radius: 5px;
     background-color: transparent;
-    
+
     width: 50%;
 }
 #copyButton {
@@ -70,9 +68,12 @@ input[type="submit"]:hover {
 .love-emojis {
   pointer-events: none;
 }
-.footer{
-    float: right;
+.footer {
     position: fixed;
-    bottom: 0px;
+    bottom: 0;
     left: 50%;
- }
+    transform: translateX(-50%);
+}
+.footer a {
+    text-decoration: none;
+}
