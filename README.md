@@ -12,6 +12,8 @@
 
 [MIT](LICENSE)
 
-## Author
+## Contributors
 
-Tahsin Zidane
+[Tahsin Zidane](https://tahsinportfo.netlify.app/)
+
+[Maruf OVi](https://oviportfo.netlify.app/)
