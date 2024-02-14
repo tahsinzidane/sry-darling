@@ -16,9 +16,10 @@
                 <input type="submit" value="generate"> 
                 </form>
             
-       
+
             <div class="txt-aria">
                     <textarea id="#" name="#" rows="15" cols="70">
+                        <!-- php start -->
                      <?php  
                     if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         $fname = $_POST["fname"];
