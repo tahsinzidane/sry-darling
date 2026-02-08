@@ -1,0 +1,95 @@
+/* Tablet and Desktop Adjustments */
+@media only screen and (min-width: 768px) {
+  .container {
+    padding: 60px 40px 140px;
+  }
+
+  .main-title {
+    font-size: 5rem;
+  }
+
+  .floating-hearts .heart {
+    font-size: 2.5rem;
+  }
+
+  .card {
+    padding: 50px;
+  }
+
+  .output-section {
+    padding: 40px;
+  }
+
+  .history-section {
+    padding: 40px;
+  }
+}
+
+/* Large Desktop */
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 800px;
+  }
+
+  .particles-container::before,
+  .particles-container::after {
+    width: 600px;
+    height: 600px;
+  }
+}
+
+/* Ultra-wide screens */
+@media only screen and (min-width: 1600px) {
+  .container {
+    max-width: 900px;
+  }
+}
+
+/* High DPI screens */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .main-title {
+    text-shadow: 0 4px 25px rgba(255, 107, 157, 0.4);
+  }
+}
+
+/* Dark mode preference */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --glass-bg: rgba(255, 255, 255, 0.06);
+    --shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Print styles */
+@media print {
+  .particles-container,
+  .footer,
+  .toast,
+  .btn,
+  .output-actions {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+
+  .card,
+  .output-section {
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apology Generator ✨</title>
+
+  <link rel="icon" href="imgs2/favicon.ico">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./src/style.css">
+  <link rel="stylesheet" href="./src/media.css">
+</head>
+
+<body>
+  <!-- Animated background particles -->
+  <div class="particles-container" id="particles"></div>
+
+  <!-- Glassmorphic container -->
+  <div class="container">
+    <div class="header-section">
+      <div class="floating-hearts">
+        <span class="heart">💝</span>
+        <span class="heart">💖</span>
+        <span class="heart">💗</span>
+      </div>
+      <h1 class="main-title">Heartfelt<br><span>Apologies</span></h1>
+      <p class="subtitle">Express your sincerest feelings, multiplied</p>
+    </div>
+
+    <div class="card">
+      <form id="apologyForm">
+        <div class="input-group">
+          <label for="nameInput">Their Name</label>
+          <input type="text" id="nameInput" placeholder="Who deserves your apology?" required>
+        </div>
+
+        <div class="input-group">
+          <label for="messageInput">Your Message</label>
+          <textarea id="messageInput" placeholder="I'm sorry..." rows="3" required></textarea>
+        </div>
+
+        <div class="controls-row">
+          <div class="input-group small">
+            <label for="countInput">Repetitions</label>
+            <input type="number" id="countInput" value="100" min="1" max="1000">
+          </div>
+
+          <div class="input-group small">
+            <label for="styleSelect">Style</label>
+            <select id="styleSelect">
+              <option value="heartfelt">💕 Heartfelt</option>
+              <option value="poetic">🌹 Poetic</option>
+              <option value="sincere">✨ Sincere</option>
+              <option value="playful">🎈 Playful</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="checkbox-group">
+          <label class="checkbox-label">
+            <input type="checkbox" id="addEmojis">
+            <span>Add random heart emojis</span>
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" id="addTimestamp">
+            <span>Include timestamp</span>
+          </label>
+        </div>
+
+        <div class="button-group">
+          <button type="submit" class="btn btn-primary">
+            <span class="btn-text">Generate Apology</span>
+            <span class="btn-icon">→</span>
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div id="outputSection" class="output-section" style="display: none;">
+      <div class="output-header">
+        <h3>Your Apology</h3>
+        <div class="output-actions">
+          <button id="copyButton" class="btn btn-secondary">
+            <span class="btn-text">Copy</span>
+            <span class="btn-icon">📋</span>
+          </button>
+          <button id="downloadButton" class="btn btn-secondary">
+            <span class="btn-text">Download</span>
+            <span class="btn-icon">💾</span>
+          </button>
+          <button id="shareButton" class="btn btn-secondary">
+            <span class="btn-text">Share</span>
+            <span class="btn-icon">📤</span>
+          </button>
+        </div>
+      </div>
+      <div id="output" class="output-content"></div>
+      <div class="stats">
+        <div class="stat-item">
+          <span class="stat-label">Characters:</span>
+          <span id="charCount" class="stat-value">0</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Words:</span>
+          <span id="wordCount" class="stat-value">0</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Love Level:</span>
+          <span id="loveLevel" class="stat-value">💖💖💖</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- History Section -->
+    <div id="historySection" class="history-section" style="display: none;">
+      <h3>Recent Apologies</h3>
+      <div id="historyList" class="history-list"></div>
+    </div>
+  </div>
+
+
+
+  <!-- Toast notification -->
+  <div id="toast" class="toast"></div>
+
+  <script src="./src/main.js"></script>
+</body>
+
+</html>
