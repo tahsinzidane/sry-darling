@@ -1,3 +1,7 @@
+Checkout [v2](./v2.md)
+
+Preview
+----
 ![banner](https://sry-darling.netlify.app/banner.jpg)
 - say sry to your darling 100x time (Fun Project)
 
